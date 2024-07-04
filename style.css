@@ -137,6 +137,20 @@ select{
     #curr_cal_heading{
         font-size: 30px;
     }
+
+    @keyframes loaded{
+
+        0%{
+            width: 0;
+            height: 0;
+        }
+        100%{
+            width: 300px;
+            height: 300px;
+           
+        }
+
+    }
 }
 
 
