@@ -1,0 +1,143 @@
+/* Best Practices */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color:steelblue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    border: 2px solid wheat;
+    width: 500px;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: 1px 1px 10px 3px wheat;
+    animation: 1.5s linear 0.25s 1 normal none running loaded; 
+
+}
+
+
+@keyframes loaded{
+
+    0%{
+        width: 0;
+        height: 0;
+    }
+    50%{
+        width: 400px;
+        height: 300px;
+       
+    }
+    100%{
+        width: 500px;
+        height: 400px;
+        
+    }
+}
+
+
+.animate{
+    animation: 2s linear 1.5s 1 normal both running opa;
+}
+
+@keyframes opa{
+    0%{
+        opacity: 0%;
+    }
+    60%{
+        opacity: 60%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+#curr_cal_heading{
+    font-size: 38px;
+    color:ghostwhite;
+    text-shadow: 0.5px 0.5px 5px darkred, 0.5px 0.5px 5px darkgreen;
+}
+
+#converte_the_curr_para{
+   margin-right: 20px;
+   font-size: 22px;
+   color:blanchedalmond;
+   font-weight: 700;
+}
+
+#amount{
+    border: 0px;
+    border-bottom: 2px solid black;
+    border-radius: 5px;
+    outline: 0;
+    background-color: powderblue;
+    text-align: center;
+    color: rgb(54, 107, 150);
+    font-weight: 700;
+}
+
+select{
+    border: 1px solid black;
+    padding: 2px;
+    outline: none;
+    border-radius: 10px;
+    background-color:rgb(38, 7, 194);
+    color: whitesmoke;
+    font-weight: 650;
+}
+
+
+#fromCurrency{
+    background-color:rgb(194, 7, 7);
+}
+
+
+#converte_to_para{
+    font-size: 18px;
+    color:rgb(122, 201, 203);
+    font-weight: bolder;
+}
+
+#resultBtn{
+    padding: 3%;
+    border-radius: 50%; 
+    background-color:aqua;
+    color:rgb(18, 80, 82);
+    font-style: italic;
+    font-weight:bolder;
+}
+
+
+
+@media screen and (width <= 500px){
+
+    #container{
+        width: 300px;
+        height: 300px;
+    }
+
+    #curr_cal_heading{
+        font-size: 30px;
+    }
+}
+
+
+

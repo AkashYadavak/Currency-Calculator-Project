@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div id="container">
+
+        <h1 class="animate" id="curr_cal_heading">Currency Calculator</h1>
+
+        <p class="animate" id="converte_the_curr_para">Converte the Currency</p>
+
+        <form class="animate">
+
+            <input type="text" inputmode="numeric" id="amount" placeholder="Enter the amount...">
+
+            <select class="selectStyle" id="fromCurrency">
+                <option value="Rupee">Rupee</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+            </select>
+
+            <br/>
+            <br/>
+
+            <p id="converte_to_para">converte to</p>
+
+            <select class="selectStyle"  id="toCurrency">
+                <option value="Rupee">Rupee</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+            </select>
+
+            <button id="resultBtn" >Result</button>
+            
+        </form>
+
+
+        <p id="ans"></p>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
