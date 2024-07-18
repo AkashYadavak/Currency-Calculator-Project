@@ -30,7 +30,7 @@ body{
     justify-content: center;
     gap: 20px;
     box-shadow: 1px 1px 10px 3px wheat;
-    animation: 1.5s linear 0.25s 1 normal none running loaded; 
+    animation: 1.5s linear 0.25s 1 normal forwards running loaded; 
 
 }
 
